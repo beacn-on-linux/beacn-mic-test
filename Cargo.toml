@@ -1,0 +1,27 @@
+[package]
+name = "beacn-mic-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Logging..
+log = "0.4.25"
+simplelog = "0.12.2"
+
+# Async Runtime
+tokio = { version = "1.43.0", features = ["rt", "rt-multi-thread", "macros", "sync"] }
+
+# USB Handling
+rusb = "0.9.4"
+byteorder = "1.5.0"
+
+# Error Handling
+anyhow = "1.0.95"
+
+# Enum Macros
+strum = "0.26.3"
+strum_macros = "0.26.4"
+
+# UI Framework
+egui = "0.31.0"
+eframe = "0.31.0"
